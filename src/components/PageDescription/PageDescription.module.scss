@@ -1,0 +1,23 @@
+.page-description p {
+  @include carbon--type-style('expressive-heading-03', true);
+
+  // 8 col
+  @include carbon--breakpoint('lg') {
+    width: 66.667%;
+  }
+}
+
+// Multiple paragaphs
+.page-description > * + * {
+  margin-top: var(--space);
+}
+
+.page-description code {
+  font-size: 0.75em;
+  line-height: 1.25;
+}
+
+// dark background
+:global(.container--dark) .page-description {
+  color: $carbon--white-0;
+}

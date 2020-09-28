@@ -1,0 +1,21 @@
+.notification :global(.bx--inline-notification) {
+  margin: 0;
+  max-width: 100%;
+  box-shadow: none;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.notification :global(.bx--inline-notification__subtitle p) {
+  @include carbon--type-style('body-short-01');
+}
+
+.notification :global(.bx--inline-notification__subtitle .bx--row) {
+  margin: 0;
+}
+
+// Fix for notifications in lists
+li .notification {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
